@@ -10,7 +10,6 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {StatusBar} from 'react-native';
 
-import OfflineNotice from '_components/OfflineNotice';
 import MainNavigation from '_navigations/MainNavigation';
 import Loader from '_components/Loader';
 
@@ -24,7 +23,6 @@ class App extends React.Component {
     return (
       <>
         <StatusBar barStyle="dark-content" backgroundColor="white" />
-        <OfflineNotice />
         <MainNavigation />
         <Loader />
       </>

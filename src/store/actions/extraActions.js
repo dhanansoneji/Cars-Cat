@@ -1,6 +1,5 @@
 // Imports
-import {IS_LOADING, RESET_AUTH} from './actionType';
-import {} from '_services';
+import {IS_LOADING, RESET_USER} from './actionType';
 
 // Loading
 export const isLoading = (trueFalse) => ({
@@ -9,6 +8,6 @@ export const isLoading = (trueFalse) => ({
 });
 
 // Reset Data
-export const resetAuth = () => ({
-  type: RESET_AUTH,
+export const resetUser = () => ({
+  type: RESET_USER,
 });

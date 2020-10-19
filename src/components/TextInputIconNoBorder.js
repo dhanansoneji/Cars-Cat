@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, TextInput} from 'react-native';
-import {Icon, Card} from 'react-native-elements';
+import {Icon} from 'react-native-elements';
 import {Layout} from '_theme';
 import {TouchableWithoutFeedback} from 'react-native-gesture-handler';
 import {Colors} from '_theme';

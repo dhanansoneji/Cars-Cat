@@ -7,23 +7,14 @@ const Styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  flalistHeight: {
-    height: '35%',
-  },
-  select: {
-    fontSize: FontSizes.FONT_SIZE_SUPREME,
-    fontFamily: 'monospace',
-    color: Colors.RED,
-    marginVertical: 10,
-  },
   emptylist: {
     color: Colors.GRAY,
     marginTop: 20,
+    alignSelf: 'center',
+    fontSize: FontSizes.FONT_SIZE_DEFAULT,
   },
-  note: {
-    color: Colors.GRAY,
-    position: 'absolute',
-    bottom: 20,
+  flatList: {
+    paddingBottom: 40,
   },
 });
 

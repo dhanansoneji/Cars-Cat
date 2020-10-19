@@ -7,7 +7,7 @@ function AddButton({action}) {
   return (
     <TouchableOpacity style={Styles.addEvent} onPress={action}>
       <View style={Styles.whiteview} />
-      <Icon name="pluscircle" type="antdesign" size={50} color={Colors.BLACK} />
+      <Icon name="pluscircle" type="antdesign" size={50} color={Colors.RED} />
     </TouchableOpacity>
   );
 }

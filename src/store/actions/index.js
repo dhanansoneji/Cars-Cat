@@ -1,3 +1,9 @@
-export {onUser} from './authActions';
+export {
+  addUserAction,
+  deleteUserAction,
+  addCatAction,
+  editCatAction,
+  deleteCatAction,
+} from './userActions';
 
-export {isLoading, resetAuth} from './extraActions';
+export {isLoading, resetUser} from './extraActions';

@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import {ImageBackground, Image, StatusBar} from 'react-native';
+import {ImageBackground, Image, StatusBar, View} from 'react-native';
 import Styles from './Style';
 import {GlobalStyles} from '_styles';
 import Assets from '_assets';
@@ -20,9 +20,13 @@ class SplashScreen extends React.Component {
   }
   render() {
     return (
-      <ImageBackground style={GlobalStyles.container}>
+      <View style={Styles.container}>
+        <ImageBackground
+          source={Assets.appBackground}
+          style={GlobalStyles.container}
+        />
         <Image source={Assets.logo} />
-      </ImageBackground>
+      </View>
     );
   }
 }

@@ -11,15 +11,21 @@ function MyHeader({iconName, iconType, title, onPress, rightComponent}) {
       backgroundColor={Colors.WHITE}
       containerStyle={styles.container}
       leftComponent={
-        <Icon name={iconName} type={iconType} size={24} onPress={onPress} />
+        <Icon
+          name={iconName}
+          type={iconType}
+          size={30}
+          onPress={onPress}
+          color={Colors.RED}
+        />
       }
       rightComponent={rightComponent === undefined ? null : rightComponent}
       centerComponent={{
         text: title,
         style: {
-          color: Colors.BLACK,
+          color: Colors.RED,
           fontWeight: 'bold',
-          fontSize: FontSizes.FONT_SIZE_DEFAULT,
+          fontSize: FontSizes.FONT_SIZE_XL,
         },
       }}
     />
@@ -27,7 +33,9 @@ function MyHeader({iconName, iconType, title, onPress, rightComponent}) {
 }
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    elevation: 5,
+  },
   menuOption: {
     width: 20,
     height: 20,

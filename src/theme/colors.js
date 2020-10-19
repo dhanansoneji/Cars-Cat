@@ -8,6 +8,8 @@ const Colors = {
   GRAY: '#808080',
   WHITE: '#FFFFFF',
   BLACK: '#000000',
+  RED: '#f07171',
+  LIGHT_RED: '#FFFAFA',
 
   //App Color
 };

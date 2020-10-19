@@ -1,12 +1,12 @@
 // Imports: Dependencies
 import {combineReducers} from 'redux';
 // Imports: Reducers
-import authReducer from '_reducers/authReducer';
+import userReducer from '_reducers/userReducer';
 import extraReducer from '_reducers/extraReducer';
 
 // Redux: Root Reducer
 const rootReducer = combineReducers({
-  authReducer,
+  userReducer,
   extraReducer,
 });
 // Exports

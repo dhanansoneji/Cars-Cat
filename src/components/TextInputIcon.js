@@ -1,54 +1,36 @@
 import React from 'react';
 import {View, StyleSheet, TextInput} from 'react-native';
 import {Icon, Card} from 'react-native-elements';
-import {Colors} from '_theme';
+import {Colors, Layout} from '_theme';
 
-function TextInputIcon({
-  iconName,
-  iconType,
-  placeholder,
-  value,
-  onChangeText,
-  secureTextEntry,
-  keyboardType,
-  maxLength,
-  editable,
-}) {
+export const TextInputIcon = React.forwardRef((props, ref) => {
   return (
     <Card containerStyle={styles.mainCard}>
       <View style={styles.mainView}>
         <Icon
-          name={iconName}
-          type={iconType}
+          name={props.iconName}
+          type={props.iconType}
           size={20}
-          color={Colors.DARK_PURPLE}
+          color={Colors.RED}
         />
-        <TextInput
-          value={value}
-          maxLength={maxLength !== undefined ? maxLength : 50}
-          keyboardType={keyboardType}
-          style={styles.textinput}
-          placeholder={placeholder}
-          placeholderTextColor={Colors.GRAY}
-          onChangeText={onChangeText}
-          secureTextEntry={secureTextEntry}
-          editable={editable === undefined ? true : editable}
-        />
+        <TextInput {...props} ref={ref} style={styles.textinput} />
       </View>
     </Card>
   );
-}
+});
 
 const styles = StyleSheet.create({
   mainCard: {
-    width: '90%',
-    height: 45,
+    width: Layout.SCREEN_WIDTH * 0.9,
+    height: 55,
     alignItems: 'center',
     backgroundColor: Colors.WHITE,
     flexDirection: 'row',
     alignSelf: 'center',
     padding: 0,
-    marginTop: 15,
+    marginVertical: 20,
+    elevation: 5,
+    borderRadius: 10,
   },
   mainView: {
     width: '100%',
