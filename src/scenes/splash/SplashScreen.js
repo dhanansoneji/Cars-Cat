@@ -25,6 +25,7 @@ class SplashScreen extends React.Component {
           source={Assets.appBackground}
           style={GlobalStyles.container}
         />
+        <View style={Styles.whiteView} />
         <Image source={Assets.logo} />
       </View>
     );
